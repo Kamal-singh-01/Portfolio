@@ -4,6 +4,15 @@ const navLinks = document.querySelector('.nav-links');
 const contactForm = document.getElementById('contact-form');
 const header = document.querySelector('.header');
 
+// Configuration for backend URLs
+const config = {
+    development: 'http://localhost:3000',
+    production: 'https://kamal-singh-portfolio.onrender.com' // This is your actual Render URL
+};
+
+// Use the appropriate backend URL based on environment
+const backendUrl = window.location.hostname === 'localhost' ? config.development : config.production;
+
 // Mobile Navigation Toggle
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -98,7 +107,7 @@ if (contactForm) {
             };
             
             // Send data to backend endpoint
-            const response = await fetch('http://localhost:3000/send-email', { // Update URL for production
+            const response = await fetch(`${backendUrl}/send-email`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
