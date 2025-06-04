@@ -1,18 +1,18 @@
 {
-  "name": "backend",
+  "name": "portfolio-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Backend for portfolio website",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@emailjs/nodejs": "^5.0.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "@emailjs/nodejs": "^2.2.0",
+    "cors": "^2.8.5"
   }
 }
