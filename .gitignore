@@ -79,9 +79,6 @@ jspm_packages/
 dist/
 build/
 
-# Personal files
-*.pdf
-
 # OS generated files
 ._*
 .Spotlight-V100
