@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a Full Stack Developer.
 
+Check live preview at - https://kamal-singh-portfolio.onrender.com
+
 ## 🌟 Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
